@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Tribute</title>
+</head>
+<body>
+    <h1 align="center">Tribute to Arahant</h1><br><br>
+    <div class="img"  align="center">
+        <img src="https://th.bing.com/th/id/OIP.84-qMKmFUR4t0gdB4bqiSAHaFX?pid=ImgDet&w=221&h=160&c=7&dpr=1.25">
+    </div>
+  <div class="mytabs">
+    <input type="radio" id="tabfree" name="mytabs" checked="checked">
+    <label for="tabfree">Who is Gautama Buddha?</label>
+    <div class="tab">
+        <img class="image"src="https://th.bing.com/th/id/OIP.84-qMKmFUR4t0gdB4bqiSAHaFX?pid=ImgDet&w=221&h=160&c=7&dpr=1.25">
+        <div class="para"><p id="para1">Gautama Buddha also called Siddhārtha Gautama, Siddhattha Gotama; Shakyamuni, Sakkamuni; and The Buddha was an ascetic and spiritual teacher of South Asia who lived during the latter half of the first millennium BCE. He is revered by Buddhists as a fully enlightened being who taught a path to Nirvana , freedom from ignorance, craving, rebirth and suffering.
+
+            According to Buddhist tradition, the Buddha was born in Lumbini in Nepal,in the Shakya clan, but abandoned his family in search of truth, the cause of suffering to live as a wandering ascetic. Leading a life of begging, asceticism, and meditation, he attained enlightenment at Bodh Gaya. The Buddha thereafter wandered through the lower Gangetic plain, teaching and building a monastic order. He taught a middle way between sensual indulgence and severe asceticism, a training of the mind that included ethical training and meditative practices such as effort, mindfulness, and jhana. He died in Kushinagar, attaining paranirvana. The Buddha has since been venerated by numerous religions and communities across Asia.</p></div>    
+
+    </div>
+    <input   type="radio" id="tabsign" name="mytabs" checked="checked">
+    <label  for="tabsign">Vipassana</label>
+    <div  class="tab">
+        <img class="image"src="https://th.bing.com/th/id/OIP.84-qMKmFUR4t0gdB4bqiSAHaFX?pid=ImgDet&w=221&h=160&c=7&dpr=1.25">
+        <div class="para"><p>Vipassana, which means to see things as they really are, is one of India's most ancient techniques of meditation. It was rediscovered by Gotama Buddha more than 2500 years ago and was taught by him as a universal remedy for universal ills, i.e., an Art Of Living. This non-sectarian technique aims for the total eradication of mental impurities and the resultant highest happiness of full liberation.
+
+            Vipassana is a way of self-transformation through self-observation. It focuses on the deep interconnection between mind and body, which can be experienced directly by disciplined attention to the physical sensations that form the life of the body, and that continuously interconnect and condition the life of the mind. It is this observation-based, self-exploratory journey to the common root of mind and body that dissolves mental impurity, resulting in a balanced mind full of love and compassion.
+            
+            The scientific laws that operate one's thoughts, feelings, judgements and sensations become clear. Through direct experience, the nature of how one grows or regresses, how one produces suffering or frees oneself from suffering is understood. Life becomes characterized by increased awareness, non-delusion, self-control and peace.</p></div>
+        
+      
+    </div>
+   
+
+  </div>
+<footer align="center"><sup style="color:red">*</sup><u>Created by Devansh</u></footer>
+</body>
+</html>
+
+
+<style>
+  body {
+    background-color:aliceblue;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    width:fit-content;
+    border:2px solid black;
+    border-radius:8px;
+    box-shadow:5px -5px green;
+    margin:50px auto;
+    color:green
+}
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 25px;
+}
+.mytabs input[type="radio"] {
+    display:none;
+}
+.mytabs label {
+    padding: 15px;
+    border:2px solid black ;
+    border-radius:7px;
+    margin-left: 5px;
+    background-color:aliceblue;
+    font-weight: bold;
+    box-shadow:5px -5px green;
+}
+.mytabs .tab {
+    width: 100%;
+    font-size: larger;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    background-color:azure;
+    order: 1;
+    display: none;
+    position:relative;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: inline;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #fff;
+}
+.img{
+    width: 200px;
+    height:200px;
+    margin:auto auto;
+}
+img{
+    border-radius: 100%;
+    width: 100%;height: 100%;
+}
+.para{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    left:0px;
+    top:0px;
+}
+.image{
+    opacity:0.7;
+}
+</style>
